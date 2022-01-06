@@ -8,6 +8,7 @@
     <PackageProjectUrl>https://github.com/aaasoft/WaveShare.EPD</PackageProjectUrl>
     <Description>WaveShare E-Paper Display GPIO drivers.</Description>
     <RepositoryUrl>https://github.com/aaasoft/WaveShare.EPD</RepositoryUrl>
+    <Version>1.0.1</Version>
   </PropertyGroup>
 
 	<ItemGroup>
