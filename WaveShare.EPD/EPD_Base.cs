@@ -36,6 +36,9 @@ namespace WaveShare.EPD
                 ClockFrequency = 4000000
             });
         }
+        
+        public abstract void Init();
+        public abstract void Clear(byte color);
 
         protected void digital_write(int pin, PinValue value)
         {

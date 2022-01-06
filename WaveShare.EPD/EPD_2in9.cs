@@ -98,7 +98,7 @@ namespace WaveShare.EPD
             ReadBusy();
         }
 
-        public void Init()
+        public override void Init()
         {
             init(lut_full_update);
         }
@@ -206,7 +206,7 @@ namespace WaveShare.EPD
             TurnOnDisplay();
         }
 
-        public void Clear(byte color)
+        public override void Clear(byte color)
         {
             SetWindow(0, 0, Width - 1, Height - 1);
             for (var j = 0; j < Height; j++)
@@ -225,7 +225,7 @@ namespace WaveShare.EPD
             SendData(0x01);
 
             delay_ms(2000);
-            Dispose();
+            base.Dispose();
         }
     }
 }
