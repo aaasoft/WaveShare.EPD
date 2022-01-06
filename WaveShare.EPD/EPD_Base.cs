@@ -1,4 +1,6 @@
-﻿using System;
+﻿using SixLabors.ImageSharp;
+using SixLabors.ImageSharp.PixelFormats;
+using System;
 using System.Collections.Generic;
 using System.Device.Gpio;
 using System.Device.Spi;
@@ -39,6 +41,7 @@ namespace WaveShare.EPD
         
         public abstract void Init();
         public abstract void Clear(byte color);
+        public abstract void Display(Image<Rgba32> image);
 
         protected void digital_write(int pin, PinValue value)
         {

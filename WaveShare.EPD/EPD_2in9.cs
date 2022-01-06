@@ -186,7 +186,7 @@ namespace WaveShare.EPD
             return buf;
         }
 
-        public void Display(Image<Rgba32> image)
+        public override void Display(Image<Rgba32> image)
         {
             Display(Getbuffer(image));
         }
